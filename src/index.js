@@ -13,6 +13,9 @@ const express = require('express')
 // instancia o express dentro de uma constante 
 const app = express()
 
+//midleway / 
+app.use(express.json())
+
 //porta que usaaremos...
 const port = 3000
 
@@ -23,7 +26,7 @@ app.listen(port, (req, res)) => {
 
 // ROTA GET Cliente
 app.get('/cliente',(req, res) => {
-    re.send("rota GET do cliente ativada")
+    re.send("rota GET do cliente ativada ")
 })
 
 //ROTA GET Livro
