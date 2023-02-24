@@ -1,6 +1,6 @@
 //importar arquivo controllercliente
-const controllercliente = require('./controllers/controller-cliente')
-controllercliente.rota(app)
+const controllerCliente = require('./controllers/controller-cliente')
+controllerCliente.rota(app)
 
 //importar arquivo controllercliente
 const controllerlivro = require('./controllers/controllers-livros')
