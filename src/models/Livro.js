@@ -1,4 +1,4 @@
-classLivro {
+class  Livro {
     constructor(nom, email, tel, end) {
         this.nome = nome,
         this.email = email,

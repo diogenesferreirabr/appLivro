@@ -9,8 +9,8 @@ const bdCliente = [
 
 const bdLivro = [
     {
-        nome; " a arte da guerra",
-        autor; "joseph jhon",
+        nome: " a arte da guerra",
+        autor: "joseph jhon",
         genero: "açao"
     }
 ]

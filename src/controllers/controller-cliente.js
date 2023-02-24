@@ -1,5 +1,6 @@
 const { response } = require("express")
 
+const Cliente = require('../models/Cliente')
 const Usuario = require('../models/Cliente')
 
 const {bdCliente } = require('../estrutura/bd')
@@ -13,7 +14,7 @@ class ClienteController {
     
 
         //POST 
-        app.post('./Cliente', controllerCliente.CadastrarCliente) // chama a rota POST
+        app.post("/Cliente", controllerCliente.CadastrarCliente) // chama a rota POST
         }
 
         //GET
@@ -42,10 +43,12 @@ class ClienteController {
         }
         //se o cliente for encontrado devolva o cliente
         res.send(cliente);
+    }
     
         
-        app.delete("/cliente/:email", ControllerCliente.deletarCliente); // deleta pelo email
+        app.delete ("/cliente/:email", ControllerCliente.deletarCliente); // deleta pelo email
         //DELETE
+        
         static deletarCliente(req, res) {
             //busca o email na lista de clientes
             const cliente = bdCliente.find((cliente) => cliente.email ===
