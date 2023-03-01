@@ -45,9 +45,10 @@ class ClienteController {
         res.send(cliente);
     }
     
-        
-        app.delete ("/cliente/:email", ControllerCliente.deletarCliente); // deleta pelo email
+
         //DELETE
+
+
         
         static deletarCliente(req, res) {
             //busca o email na lista de clientes
@@ -71,10 +72,10 @@ class ClienteController {
         }
 
 
-    }
+}
     
 
-    
+
 
 
 

@@ -24,6 +24,30 @@ class LivroController {
         res.semd(livro);
     }
 
-}    
+    // deletar livro 
+    static deletarLivro(req, res) {
+        //busca o email na lista de Livros 
+        const livro = Livro.find((livro ) => livro.nome ===
+        req.params.email
+        );
+        // se o livro nao for encontado devolva um erro 
+        if (!livro) {
+            res.send("livro não encontrado");
+            return
+        }
+        //se o livro for encontrado delete o livro 
+        const index = liLivro.indexOf(livro);
+        bdLivro.splice(index, 1);
+        //devolva o livro deletado
+        res.send({
+            "mensagem: ": `o livro do nome ${livro.nome} foi deletado`,
+        });
+
+
+    }
+
+
+}
+
 
 module.exports = controlerLivros 
