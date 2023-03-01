@@ -20,9 +20,9 @@ app.use(express.json())
 const port = 3000
 
 // funçao do express que...
-app.listen(port, (req, res)) => {
+app.listen(port, (req, res) => {
     console.log(`servidor rodando na porta ${port}`)
-}
+} )
 
 // ROTA GET Cliente
 app.get('/cliente',(req, res) => {
