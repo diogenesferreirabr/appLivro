@@ -3,7 +3,7 @@ const bdCliente = [
 	    nome : "Maria Souza",
 	    email: "mariasouza@gmail.com",
 	    tel: "1234-5678",
-	    end: "rua jose, 100, cetnro/RJ"
+	    end: "rua jose, 100, centro/RJ"
     }
 ]
 
